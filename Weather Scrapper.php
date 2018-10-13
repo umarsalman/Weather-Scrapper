@@ -74,6 +74,39 @@ if (array_key_exists('city', $_GET)) {
             width: 450px;
         }
     </style>
+
+    <!--to autocomplete the city names in the search box we can use technologies like ajax commbined with php --> 
+
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+        <!-- added ajax libraries -->
+
+        <script>
+
+          // put a focus on the field
+
+          $(document).ready(function(){
+
+            $('#city').focus();
+
+          });
+
+          $(document).ready(function() {
+
+            $('#city').autocomplete({
+
+              source: "autocompletion.php"
+
+            //autocompletion file provides the necessary suggestions in the search box
+              
+
+            });
+
+          });
+
+          </script>
 </head>
 <body>
 <div class="container">
