@@ -73,7 +73,23 @@ if (array_key_exists('city', $_GET)) {
             text-align: center;
             width: 450px;
         }
-    </style>
+			</style>
+		<!-- adding the ajax Code for auto complete -->	
+		  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+		  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		  <script>
+		  // put a focus on the field
+		  $(document).ready(function(){
+			$('#city').focus();
+		  });
+		  $(document).ready(function() {
+			$('#city').autocomplete({
+			//using locationautocomplete.php to get the suggestions
+			  source: "locationautocomplete.php"
+			  
+			});
+		  });
+		  </script>
 </head>
 <body>
 <div class="container">
