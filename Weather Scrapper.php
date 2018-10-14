@@ -82,11 +82,19 @@ if (array_key_exists('city', $_GET)) {
 
     <form>
         <div class="form-group">
-            <input value="<?php
-            if (array_key_exists('city', $_GET)) {
-                echo $city;
-            }
-            ?>" name="city" type="text" class="form-control" id="city" placeholder="eg Delhi,Lucknow,London">
+          <input list="cities" id="city-choice" name="city" class="form-control" placeholder="eg Delhi,Lucknow,London"
+          value="<?php
+          if (array_key_exists('city', $_GET)) {
+              echo $city;
+          }
+          ?>" />
+          <datalist id="cities">
+              <option value="Barcelona">
+              <option value="Delhi">
+              <option value="London">
+              <option value="Lucknow">
+              <option value="Beijin">
+          </datalist>
         </div>
         <button type="submit" class="btn btn-dark">Check</button>
 
