@@ -9,7 +9,7 @@ if (array_key_exists('city', $_GET)) {
 
     $file_headers = @get_headers($forecastUrl);
     if (!is_array($file_headers) || $file_headers[0] != 'HTTP/1.1 200 OK') {
-        $error = 'Sorry for the inconvenience, this city could not be found';
+        $error = true;
     } else {
         $forecast = file_get_contents($forecastUrl);
         $split = explode('</h2>(1&ndash;3 days)</span><p class="b-forecast__table-description-content"><span class="phrase">', $forecast);
@@ -19,10 +19,10 @@ if (array_key_exists('city', $_GET)) {
             if (!empty($required)) {
                 $weather = $required[0];
             } else {
-                $error = 'Sorry for the inconvenience, this city could not be found';
+                $error = true;
             }
         } else {
-            $error = 'Sorry for the inconvenience, this city could not be found';
+            $error = true;
         }
     }
 }
@@ -117,11 +117,13 @@ if (array_key_exists('city', $_GET)) {
 
     </form>
     <div><?php
+
         if ($weather) {
             echo '<br><div class="alert alert-success" role="alert">' . $weather . '</div>';
         }
+
         if ($error) {
-             echo '<br><div class="alert alert-danger" role="alert">' . $error . '</div>';
+             echo '<br><div class="alert alert-danger" role="alert">Sorry for the inconvenience, this city could not be found</div>';
         }
         ?>
     </div>
