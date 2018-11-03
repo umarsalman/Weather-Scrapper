@@ -1,5 +1,5 @@
 # Weather-Scrapper
-A web based application which can show the present weather condition of any city in the world.
+A web based application which can show the present weather conditions of any city in the world.
 Interested people may contribute and can make pull requests for hacktoberfest18.</br></br>
 
 For searching the weather conditions of any city just type it's name in the search box provided.</br>
