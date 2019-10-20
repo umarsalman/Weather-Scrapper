@@ -36,44 +36,12 @@ if (array_key_exists('city', $_GET)) {
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather Scrapper</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <title>Weather Scrapper</title>
-    <style type="text/css">
-        body {
-
-            width: 100%;
-            margin: 0 auto;
-            padding: 0px;
-            font-family: sans-serif;
-            background-color: #81DAF5;
-
-            background: url(https://wallpaperscraft.com/image/ocean_atlantic_horizon_sunset_113029_1920x1080.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        h1 {
-            margin-top: 100px;
-            font-weight: bold;
-            color: #0B2241;
-        }
-
-        p {
-            font-weight: bold;
-            font-size: 140%;
-            color: #0B2241;
-        }
-
-        .container {
-            text-align: center;
-            width: 450px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    
     <!-- adding the ajax Code for auto complete -->
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
@@ -102,8 +70,7 @@ if (array_key_exists('city', $_GET)) {
                 <input list="cities" id="city-choice" name="city" class="form-control" placeholder="eg Delhi,Lucknow,London" value="<?php
                                                                                                                                     if (array_key_exists('city', $_GET)) {
                                                                                                                                         echo $city;
-                                                                                                                                    }
-                                                                                                                                    ?>" />
+                                                                                                                                                                                                                                                        ?>" />
                 <datalist id="cities">
                     <option value="Barcelona">
                     <option value="Delhi">
