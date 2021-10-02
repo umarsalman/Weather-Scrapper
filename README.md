@@ -1,4 +1,4 @@
-# Weather-Scrapper
+# Weather-Scrapper an amazing project
 A web based application which can show the present weather conditions of any city in the world.
 Interested people may contribute and can make pull requests for hacktoberfest18.</br></br>
 
