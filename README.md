@@ -1,13 +1,12 @@
 # Weather-Scrapper
-A web based application which can show the present weather conditions of any city in the world.
-Interested people may contribute and can make pull requests for hacktoberfest18.</br></br>
+Weather-Scrapper is a web based application that can show the current weather conditions for any city in the world.
+Interested people may contribute and can make pull requests for Hacktoberfest 2021.</br></br>
 
-For searching the weather conditions of any city just type its name in the search box provided.</br>
-For example:London,Addis Ababa,Los Angeles,etc.</br></br>
-Here are some images for representation purpose:</br></br></br>
-![alt text](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws1.PNG)</br>
-![alt text](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws2.PNG)</br>
-![alt text](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws3.PNG)</br>
+To launch the Weather-Scrapper application, open a browser and navigate to `https://www.weather-forecast.com/locations/{city}/forecasts/latest`, replacing `{city}` with the city you would like to view the forecast for (e.g. "London", "New-York", etc). You can also navigate to the base URL `https://www.weather-forecast.com`, and from there you can search for your location in the search box located in the upper right corner of the page.</br></br>
+Here are some screenshots of the application in use:</br></br></br>
+![Weather Scrapper in use 1](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws1.PNG)</br>
+![Weather Scrapper in use 2](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws2.PNG)</br>
+![Weather Scrapper in use 3](https://github.com/umarsalman/Weather-Scrapper/blob/master/ws3.PNG)</br>
 
 
 
